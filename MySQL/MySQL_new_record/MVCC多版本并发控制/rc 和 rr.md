@@ -1,0 +1,2 @@
+rc是在每次select语句之前都会生成Read View然后按照这个Read View去进行快照读
+rr是在事务开启时生成Read View然后每次都只按照这个Read View去进行快照读

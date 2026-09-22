@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "93222c40e452202e",
+    "type": "split",
+    "children": [
+      {
+        "id": "814fcab59b27148c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8643848671b5010e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "联合索引场景分析和索引失效/索引失效.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "索引失效"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "290899e317040c28",
+    "type": "split",
+    "children": [
+      {
+        "id": "7106ff9b6caca4e8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6c58d85948bc88c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "9ce0f6b3a68449d9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "bed7e193c0b70bff",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "98c12eda16702dae",
+    "type": "split",
+    "children": [
+      {
+        "id": "b85a84571c94dcee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0e6cbd938f07b62a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "锁/行级锁/行级锁的创建.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "257dac16a6ac3d02",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "锁/行级锁/行级锁的创建.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "9f559cc38b5217c6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "bf4c76719a115920",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "aae695f28bff7ba4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "锁/行级锁/行级锁的创建.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "8643848671b5010e",
+  "lastOpenFiles": [
+    "联合索引场景分析和索引失效/前言, 这个有东西.md",
+    "联合索引场景分析和索引失效/索引失效.md",
+    "索引中的B+Tree结构/来个简易版本.md",
+    "索引中的B+Tree结构/结构详解.md",
+    "索引中的B+Tree结构/前言.md",
+    "锁/行级锁/行级锁的加锁时机.md",
+    "联合索引场景分析和索引失效",
+    "锁/行级锁/行级锁的类别.md",
+    "Photo/Pasted image 20260921164722.png",
+    "Photo/Pasted image 20260921005219.png",
+    "Pasted image 20260921164919.png",
+    "Photo/Pasted image 20260921164927.png",
+    "Pasted image 20260921164909.png",
+    "Photo/Pasted image 20260921164641.png",
+    "MVCC多版本并发控制/rc 和 rr.md",
+    "索引中的B+Tree结构",
+    "Photo",
+    "MVCC多版本并发控制/MVCC规则.md",
+    "MVCC多版本并发控制/Read View 和 undo log介绍.md",
+    "MVCC多版本并发控制/前言.md",
+    "MVCC多版本并发控制",
+    "锁/行级锁",
+    "锁/前言.md",
+    "欢迎.md",
+    "锁"
+  ]
+}

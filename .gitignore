@@ -1,0 +1,12 @@
+# 文件夹
+# 忽略IDEA软件
+IDEA/
+# 忽略JDK
+JDK/
+
+out/
+target/
+
+# 文件
+*.class
+*.log
