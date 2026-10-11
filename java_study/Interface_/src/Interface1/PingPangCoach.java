@@ -10,4 +10,9 @@ public class PingPangCoach extends Coach implements English{
     public void sayEnglish(){
         System.out.println("说英语");
     }
+
+    @Override
+    public void eat(){
+
+    }
 }

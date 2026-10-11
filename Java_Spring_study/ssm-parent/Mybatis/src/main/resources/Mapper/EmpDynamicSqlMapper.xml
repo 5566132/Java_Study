@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.dynamicSql.EmpDynamicSqlMapper">
+
+    <select id="getEmpByNameAndSalary" resultMap="com.atguigu.mybatis.mapper.dynamicSql.EmpDynamicSqlMapper.EmpMP">
+        select * from t_emp
+        <where>
+            <if test="name != null">
+                and emp_name = #{name}
+            </if>
+            <if test="salary != null">
+                and emp_salary = #{salary}
+            </if>
+        </where>
+    </select>
+    <resultMap id="EmpMP" type="com.atguigu.mybatis.bean.emp.Emp">
+        <id column="id" property="id"></id>
+        <result column="emp_name" property="empName"></result>
+        <result column="age" property="age"></result>
+        <result column="emp_salary" property="empSalary"></result>
+    </resultMap>
+
+
+    <update id="updateEmpById">
+        update t_emp
+        <set>
+            <if test="emp.empName != null">
+                emp_name = #{emp.empName},
+            </if>
+            <if test="emp.age != null">
+                age = #{emp.age},
+            </if>
+            <if test="emp.empSalary != null">
+                emp_salary = #{emp.empSalary},
+            </if>
+        </set>
+
+        <where>
+                id = #{id}
+        </where>
+
+    </update>
+
+
+<!--    根据集合中的id查询Emp-->
+    <select id="getEmpByList" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        select * from t_emp
+            <trim prefix="where " prefixOverrides="or" suffix="" suffixOverrides="or">
+                <foreach collection="list" item="id">
+                     id = #{id} or
+                </foreach>
+            </trim>
+
+
+<!--        <foreach collection="list" item="id" separator="," open="where id in(" close=")">-->
+<!--            #{id}-->
+<!--        </foreach>-->
+    </select>
+
+
+<!--    依据list批量插入-->
+    <insert id="insertEmpByList" >
+        insert into t_emp(id,emp_name, age, emp_salary)
+
+                <foreach collection="list" item="emp" separator="," open="value" close="">
+                    (#{emp.id}, #{emp.empName}, #{emp.age}, #{emp.empSalary})
+                </foreach>
+
+    </insert>
+<!--    批量修改-->
+    <update id="updateEmpByList">
+        <foreach collection="list" item="e" separator=";">
+
+                <trim prefix="update t_emp set " suffixOverrides="," suffix="">
+
+                        <if test="e.empName != null">
+                            emp_name = #{e.empName},
+                        </if>
+                        <if test="e.age != null">
+                            age = #{e.age},
+                        </if>
+                        <if test="e.empSalary != null">
+                            emp_salary = #{e.empSalary},
+                        </if>
+                </trim>
+                <where>
+                    id = #{e.id}
+                </where>
+
+        </foreach>
+    </update>
+
+
+<!--    批量删除-->
+    <delete id="deleteEmpByList">
+        <foreach collection="list" item="e">
+            delete from t_emp where id = #{e.id};
+        </foreach>
+    </delete>
+
+
+
+
+</mapper>

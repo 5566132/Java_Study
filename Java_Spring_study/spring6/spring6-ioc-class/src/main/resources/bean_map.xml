@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "teacher1" class = "com.class1.Son_map.Teacher">
+        <property name="name" value = "教师一号"></property>
+        <property name="age" value = "19"></property>
+    </bean>
+    <bean id = "teacher2" class = "com.class1.Son_map.Teacher">
+        <property name="name" value = "教师二号"></property>
+        <property name="age" value = "10000"></property>
+    </bean>
+
+
+
+    <bean id = "student1" class = "com.class1.Son_map.Student">
+        <property name="name" value="学生一号"></property>
+        <property name="age" value = "18"></property>
+
+        <property name="M">
+            <map>
+                <entry>
+                    <key>
+                        <value>1</value>
+                    </key>
+                    <ref bean = "teacher1"></ref>
+                </entry>
+                <entry>
+                    <key>
+                        <value>2</value>
+                    </key>
+                    <ref bean = "teacher2"></ref>
+                </entry>
+            </map>
+        </property>
+    </bean>
+
+
+
+</beans>

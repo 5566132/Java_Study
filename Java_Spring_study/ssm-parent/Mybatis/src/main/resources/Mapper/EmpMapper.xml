@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.Emp.EmpMapper">
+
+    <!-- 查所有员工 -->
+    <select id="getAllEmps" resultType="com.atguigu.mybatis.bean.emp.Emp">
+#         SELECT id, emp_name, age, emp_salary FROM t_emp
+        select * from t_emp
+    </select>
+
+    <!-- 按 id 查单个员工 -->
+    <select id="getEmpById" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        SELECT id, emp_name, age, emp_salary FROM t_emp WHERE id = #{id}
+    </select>
+
+    <!-- 新增员工（自动回填自增主键到 emp.id） -->
+    <insert id="insertEmp" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO t_emp(emp_name, age, emp_salary) VALUES(#{empName}, #{age}, #{empSalary})
+    </insert>
+
+    <!-- 修改员工 -->
+    <update id="updateEmp">
+        UPDATE t_emp SET emp_name = #{empName}, age = #{age}, emp_salary = #{empSalary} WHERE id = #{id}
+    </update>
+
+    <!-- 按 id 删除员工 -->
+    <delete id="deleteEmp">
+        DELETE FROM t_emp WHERE id = #{id}
+    </delete>
+</mapper>

@@ -5,4 +5,9 @@ public class BasketballSporter extends Sporter{
     public void study(){
         System.out.println("学打篮球");
     }
+
+    @Override
+    public void eat(){
+
+    }
 }

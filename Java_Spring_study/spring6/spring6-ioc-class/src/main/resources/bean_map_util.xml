@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/util
+       https://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id = "teacher1" class = "com.class1.Son_map.Teacher">
+        <property name="name" value = "教师一号"></property>
+        <property name="age" value = "19"></property>
+    </bean>
+    <bean id = "teacher2" class = "com.class1.Son_map.Teacher">
+        <property name="name" value = "教师二号"></property>
+        <property name="age" value = "10000"></property>
+    </bean>
+
+<!--    创建teacher的map-->
+    <util:map id = "TeacherMap">
+        <entry>
+            <key>
+                <value>1</value>
+            </key>
+            <ref bean = "teacher1"></ref>
+        </entry>
+        <entry>
+            <key>
+                <value>2</value>
+            </key>
+            <ref bean = "teacher2"></ref>
+        </entry>
+    </util:map>
+
+<!--   创建teacher的list-->
+    <util:list id = "TeacherList">
+        <ref bean = "teacher1"></ref>
+        <ref bean = "teacher2"></ref>
+    </util:list>
+
+<bean id = "stu1" class = "com.class1.Son_map.Student">
+    <property name="name" value="学生一号"></property>
+    <property name="age" value = "18"></property>
+    <property name="m" ref = "TeacherMap"></property>
+    <property name="l" ref = "TeacherList"></property>
+
+</bean>
+
+
+
+
+
+</beans>

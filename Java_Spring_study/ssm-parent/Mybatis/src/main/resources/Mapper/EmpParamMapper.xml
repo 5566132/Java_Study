@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.Emp.EmpParamMapper">
+<!--    按照id查询单个员工信息-->
+    <select id = "getEmployee1" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        select id, emp_name, age, emp_salary from t_emp where id = #{id}
+    </select>
+<!--    查询数组中第二个员工的信息-->
+    <select id="getEmployee2" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        select id, emp_name, age, emp_salary from t_emp where id = #{list[1]}
+    </select>
+<!--    单个Emp参数-->
+    <insert id="addEmployee1" useGeneratedKeys="true" keyProperty="id">
+        insert into t_emp(emp_name, age) value(#{empName}, #{age})
+    </insert>
+<!--    map填emp-->
+    <insert id="addEmployee2">
+        insert into t_emp(emp_name, age) value(#{name}, #{age})
+    </insert>
+
+<!--    -->
+    <select id = "getSalaryById" resultType="java.math.BigDecimal">
+        select emp_salary from t_emp where id = #{id}
+    </select>
+<!--    list-->
+    <select id="getAll" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        select * from t_emp;
+    </select>
+
+<!--    Map-->
+    <select id = "getAllMap" resultType="com.atguigu.mybatis.bean.emp.Emp">
+        select * from t_emp
+    </select>
+
+
+</mapper>

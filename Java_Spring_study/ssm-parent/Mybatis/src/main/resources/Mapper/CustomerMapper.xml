@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.cus_order.CustomerMapper">
+
+
+
+
+<!--    这个是查询用户, 不分步的-->
+    <select id="getCustomerById" resultMap="CustomerMP">
+        select c.*,
+            o.id o_id,
+            o.address,
+            o.amount,
+            o.customer_id
+        from customer c left join t_order o on c.id = o.customer_id where c.id = #{whatisthis};
+    </select>
+
+    <resultMap id="CustomerMP" type="com.atguigu.mybatis.bean.cus_order.Customer">
+        <id column="id" property="id"></id>
+        <result column="customer_name" property="name"></result>
+        <result column="phone" property="phone"></result>
+        <collection property="orders" ofType="com.atguigu.mybatis.bean.cus_order.Order">
+            <id column="o_id" property="id"></id>
+            <result column="address" property="address"></result>
+            <result column="amount" property="amount"></result>
+            <result column="customer_id" property="customerId"></result>
+<!--            <association property="cus" javaType = "">-->
+<!--                <id column="id" property="id"></id>-->
+<!--                <result column="customer_name" property="name"></result>-->
+<!--                <result column="phone" property="phone"></result>-->
+<!--            </association>-->
+        </collection>
+    </resultMap>
+
+
+
+
+
+
+
+
+<!--    查询用户分步-->
+    <select id="getCustomerById_orderSteps" resultMap="CustomerOrdersMP">
+        select * from customer where id = #{id}
+    </select>
+
+    <resultMap id="CustomerOrdersMP" type="com.atguigu.mybatis.bean.cus_order.Customer">
+        <id column="id" property="id"></id>
+        <result column="customer_name" property="name"></result>
+        <result column="phone" property="phone"></result>
+
+        <collection property="orders"
+                    ofType="com.atguigu.mybatis.bean.cus_order.Order"
+                    select="com.atguigu.mybatis.mapper.cus_order.OrderMapper.getOrderByCustomerId"
+                    column="id">
+        </collection>
+    </resultMap>
+
+
+
+
+<!--    按照id查单一Customer-->
+    <select id="get" resultType="com.atguigu.mybatis.bean.cus_order.Customer">
+        select * from customer where id = #{id}
+    </select>
+
+
+
+
+
+
+
+
+<!--    查询所有Customer   -->
+    <select id="getAllCustomer" resultMap="com.atguigu.mybatis.mapper.cus_order.CustomerMapper.CustomerOrdersMP">
+        select * from customer
+    </select>
+
+<!--    查询所有Order-->
+    <select id ="getAllOrder" resultMap="com.atguigu.mybatis.mapper.cus_order.OrderMapper.OrderMp">
+        select * from t_order
+    </select>
+
+
+<!--    我试试, 不用自定义结果集去查单个用户-->
+    <select id="getOneCustomer">
+
+    </select>
+
+
+
+
+</mapper>

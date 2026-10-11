@@ -1,0 +1,219 @@
+{
+  "main": {
+    "id": "c7f7d5c18b2bb866",
+    "type": "split",
+    "children": [
+      {
+        "id": "a7832b4292862b19",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3466b87ac5366538",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "12-短期计划-集合Spring网络.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "12-短期计划-集合Spring网络"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f61f4950fb729cff",
+    "type": "split",
+    "children": [
+      {
+        "id": "c18dea2cb24d6ed1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7be4050495a93d17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "5dee38a212f9b86b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "b125b4e9de24a847",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "98e946def154713c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a495d28bb97cbbce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8c44ab0377bdb8c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "01-技术栈学习路线.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "807e2126feb466f1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "01-技术栈学习路线.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "fa828ea112181f91",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "8db1f2479106be42",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "9c61504898b5c7e5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "01-技术栈学习路线.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "3466b87ac5366538",
+  "lastOpenFiles": [
+    "13-AI-Agent学习规划.md",
+    "12-短期计划-集合Spring网络.md",
+    "12-短期计划-集合Spring网络.md.tmp.21468.7af693b6cb88",
+    "12-短期计划-集合Spring网络.md.tmp.21468.83014cc53908",
+    "12-短期计划-集合Spring网络.md.tmp.21468.f58df09eb863",
+    "11-数据库面试重点.md",
+    "07-MySQL学习深度.md",
+    "使用说明.md",
+    "01-技术栈学习路线.md",
+    "10-操作系统面试重点.md",
+    "09-计算机网络面试重点.md",
+    "08-数据结构与算法面试重点.md",
+    "03-八股面经题库.md",
+    "02-项目规划.md",
+    "00-README.md",
+    "03-八股面经题库.md.tmp.30580.8083a1aa2c1d",
+    "00-README.md.tmp.30580.a38baea961d9",
+    "00-README.md.tmp.30580.2aa4c5b1ec13",
+    "00-README.md.tmp.30580.4de2d3498246",
+    "01-技术栈学习路线.md.tmp.30580.7ce270f5b264",
+    "01-技术栈学习路线.md.tmp.37232.650ed8be5f1b",
+    "07-MySQL学习深度.md.tmp.37232.28e039605f88",
+    "06-城市薪资开销与求职流程.md",
+    "05-岗位认知.md",
+    "04-求职行动清单.md"
+  ]
+}

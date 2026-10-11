@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.mybatis.mapper.cus_order.OrderMapper">
+
+<!--    根据订单id查找多表查询的数据  -->
+    <select id="getOrderById" resultMap="OrderMp">
+        select o.* ,
+            c.id c_id,
+            c.customer_name,
+            c.phone
+        from t_order o left join customer c on o.customer_id = c.id
+        where o.id = #{id}
+    </select>
+
+    <resultMap id="OrderMp" type="com.atguigu.mybatis.bean.cus_order.Order">
+        <id column = "id" property = "id"></id>
+        <result column="address" property="address"></result>
+        <result column="amount" property="amount"></result>
+        <result column="customer_id" property="customerId"></result>
+        <association property="cus" javaType="com.atguigu.mybatis.bean.cus_order.Customer">
+            <result column="c_id" property="id"></result>
+            <result column="customer_name" property="name"></result>
+            <result column="phone" property="phone"></result>
+        </association>
+    </resultMap>
+
+
+<!--    根据Order表中的用户id查询订单-->
+    <select id="getOrderByCustomerId" resultType="com.atguigu.mybatis.bean.cus_order.Order">
+        select * from t_order t where t.customer_id = #{id}
+    </select>
+
+
+
+
+
+
+<!--    分步查询订单-->
+    <select id="getOrderById_Step" resultMap="CustomerStepMP">
+        select * from t_order where id = #{id}
+    </select>
+
+    <resultMap id="CustomerStepMP" type="com.atguigu.mybatis.bean.cus_order.Order">
+        <id column="id" property="id"></id>
+        <result column="address" property="address"></result>
+        <result column="amount" property="amount"></result>
+        <result column="customer_id" property="customerId"></result>
+        <association property="cus"
+                     javaType="com.atguigu.mybatis.bean.cus_order.Customer"
+                     select="com.atguigu.mybatis.mapper.cus_order.CustomerMapper.getCustomerById"
+                     column="customer_id">
+        </association>
+    </resultMap>
+<!--    到这里结束-->
+
+
+
+
+
+<!--    根据id查订单 并且查到下单的用户 并且 查到用户的所有订单-->
+    <select id="getOrderByIdAndCustomerAndOrder" resultMap="CustomerMap">
+        select * from t_order where id = #{id}
+    </select>
+    <resultMap id="CustomerMap" type="com.atguigu.mybatis.bean.cus_order.Order">
+        <id column="id" property="id"></id>
+        <result column="address" property="address"></result>
+        <result column="amount" property="amount"></result>
+        <result column="customer_id" property="customerId"></result>
+        <association property="cus"
+                     javaType="com.atguigu.mybatis.bean.cus_order.Customer"
+                     select="com.atguigu.mybatis.mapper.cus_order.CustomerMapper.getCustomerById_orderSteps"
+                     column="customer_id">
+        </association>
+    </resultMap>
+<!--    到这里结束-->
+
+
+
+</mapper>

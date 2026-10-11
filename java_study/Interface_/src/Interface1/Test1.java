@@ -8,7 +8,7 @@ public class Test1 {
         System.out.println(pps.getname() + "     " + pps.getage() + "   " );
         pps.study();
         pps.sayEnglish();
-        Sporter.eat();
+        //Sporter.eat();
         pps.eat();
         pps.find();
 

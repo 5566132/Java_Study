@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "53c2eb1856f96b3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "89b69edb2f5f6a52",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d152878f0b0c03b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Lambda表达式/01-要点总结.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-要点总结"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "35d966d3854c34a3",
+    "type": "split",
+    "children": [
+      {
+        "id": "d11be48b71984862",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aea29437683157ee",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "36e4550acf3a1fe4",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "fa937d83a635f27a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9c8eb10332374bf5",
+    "type": "split",
+    "children": [
+      {
+        "id": "d44dbfaf9a901600",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "acc7683f9097cf1c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "基础语法/special类型转换.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "aceb4c5ea9e31ea8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "基础语法/special类型转换.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "357b02781ec6d740",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "70ace6a379d86e34",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "04985ce8c66e0d28",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "基础语法/special类型转换.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "d152878f0b0c03b1",
+  "lastOpenFiles": [
+    "Lambda表达式/简介.md",
+    "Lambda表达式/01-要点总结.md",
+    "Stream流/02-终结方法/03-toArray转换成数组.md",
+    "未命名",
+    "Stream流/02-终结方法/02-count统计.md",
+    "Stream流/02-终结方法/01-forEach.md",
+    "Stream流/02-终结方法/00-前言, 写了.md",
+    "Java重要注意事项.md",
+    "Stream流/01-非终结方法/02-获取流.md",
+    "Stream流/02-终结方法",
+    "Stream流/01-非终结方法",
+    "Stream流/00-前言,写了",
+    "Stream流/01-非终结方法/06-map元素类型转换.md",
+    "Stream流/01-非终结方法/04-filter过滤数据.md",
+    "Stream流/00-前言,写了/01-Stream流是个什么.md",
+    "Stream流/00-前言,写了/00-前言.md",
+    "Stream流/01-非终结方法/04-去重和连接流.md",
+    "Stream流/01-非终结方法/03-跳过和获取流中前几个元素.md",
+    "Stream流",
+    "常用时间相关类/LocalDateTime.md",
+    "常用时间相关类/前言.md",
+    "imp 接口 interface/接口语法.md",
+    "imp 接口 interface/匿名内部类.md",
+    "imp 接口 interface/妙啊.md",
+    "imp 接口 interface/接口简介.md",
+    "imp 接口 interface/前言.md",
+    "多线程Thread/Future.md",
+    "多线程Thread/线程创建的方式.md",
+    "多线程Thread/前言.md",
+    "多线程Thread/important线程池.md",
+    "多线程Thread/Thread线程方法.md",
+    "Photo/Pasted image 20260916180839.png",
+    "Photo/Pasted image 20260917125441.png",
+    "Photo/Pasted image 20260917140221.png",
+    "Photo/Pasted image 20260920001431.png",
+    "反射",
+    "可变参数",
+    "Photo",
+    "小林coding书签",
+    "多线程Thread"
+  ]
+}
