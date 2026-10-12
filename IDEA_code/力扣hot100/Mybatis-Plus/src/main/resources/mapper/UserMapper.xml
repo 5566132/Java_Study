@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.itheima.mp.mapper.UserMapper">
     <sql id = "AllSegment">
-        id, t_name, age, salary , t_order, address
+        id, t_name, age, salary , address , createTime
     </sql>
 
 
@@ -21,8 +21,8 @@
         <result column="t_name" property="name"></result>
         <result column="age" property="age"></result>
         <result column="salary" property="salary"></result>
-        <result column="t_order" property="t_order"></result>
         <result column="address" property="address"></result>
+        <result column="create_time" property="createTime"></result>
     </resultMap>
 
 <!--    根据id扣money-->

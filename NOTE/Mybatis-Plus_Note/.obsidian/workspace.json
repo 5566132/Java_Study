@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03-IService层/01-!! Service层变成 IService层.md",
+                "file": "04-IService层/05-批量新增如何更快.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-!! Service层变成 IService层"
+              "title": "05-批量新增如何更快"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 234.83334350585938
   },
   "right": {
     "id": "2024747992aa09a0",
@@ -190,14 +190,24 @@
   },
   "active": "5cc12247cb3f7ad7",
   "lastOpenFiles": [
-    "02-Mapper层的变化/01-Mapper层.md",
-    "03-IService层/01-!! Service层变成 IService层.md",
-    "03-IService层",
+    "04-IService层/02-lambdaQuery.md",
+    "04-IService层/05-批量新增如何更快.md",
+    "04-IService层/01-!! Service层变成 IService层.md",
+    "04-IService层/04-lambdaUpdate跟lambdaQuery一模一样.md",
+    "02-条件构造器/04-!!!条件构造器重点.md",
+    "04-IService层/03-lambdaQuery怎么使用.md",
+    "05-MP的TableInfo映射表/02-流程图.md",
+    "05-MP的TableInfo映射表/01-TableInfo.md",
+    "05-MP的TableInfo映射表",
+    "02-条件构造器/03-Wapper.md",
+    "09-一点小总结/01-10.12.md",
+    "Photo/Pasted image 20261012020034.png",
+    "09-一点小总结",
+    "03-Mapper层的变化/01-Mapper层.md",
+    "04-IService层",
     "01-语法配置方面/01-BaseMapper接口.md",
     "00-Mybatis-Plus前言/01-一些常用配置.md",
-    "02-条件构造器/04-!!!条件构造器重点.md",
-    "02-Mapper层的变化",
-    "02-条件构造器/03-Wapper.md",
+    "03-Mapper层的变化",
     "02-条件构造器/02-分类.md",
     "02-条件构造器/00-前言, !!!!!.md",
     "02-条件构造器/01-条件构造器是什么.md",

@@ -13,10 +13,17 @@ import java.util.List;
 
 public interface UserMapper extends BaseMapper<User> {
     public List<User> selectAllUser();
+
+
+
+    //利用Wrapper传递条件去查询多个id的数据
     public List<User> selectUserByWrapper(@Param("ew") LambdaQueryWrapper<User> lqw);
 
     //根据id扣减余额
     public void DeductMoneyById(@Param("id") Long id, @Param("money") BigDecimal money);
+
+
+
 
 
 

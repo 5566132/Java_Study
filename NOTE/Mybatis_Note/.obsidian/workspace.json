@@ -11,10 +11,14 @@
             "id": "9c909cae79c37faf",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "03-数据分层DTO PO VO/01-DTO PO VO.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "01-DTO PO VO"
             }
           }
         ]
@@ -183,35 +187,36 @@
   },
   "active": "9c909cae79c37faf",
   "lastOpenFiles": [
+    "02-基础用法/01-Dao层变为Mapper/01-Dao层的变化.md",
+    "03-数据分层DTO PO VO/01-DTO PO VO.md",
+    "03-数据分层DTO PO VO",
+    "02-基础用法/02-配置xml文件/01-select相关/10-重点总结.md",
+    "02-基础用法/02-配置xml文件/00-前言,写了/00-前言, 写了.md",
+    "02-基础用法/02-配置xml文件/01-select相关/01-select主体部分.md",
+    "02-基础用法/02-配置xml文件/01-select相关/02-名称不对应怎么办,映射.md",
+    "02-基础用法/02-配置xml文件/01-select相关/03-成员有类怎么办,映射.md",
+    "02-基础用法/02-配置xml文件/02-动态SQL/01-!!!!SQL注入问题.md",
+    "02-基础用法/02-配置xml文件/02-动态SQL/01-if标签.md",
+    "02-基础用法/02-配置xml文件/02-动态SQL/03-set标签.md",
+    "02-基础用法/02-配置xml文件/02-动态SQL/04-!!!trim标签.md",
     "file:D:/A_java/NOTE/git使用教程/git语法.md",
     "01-Mybatis使用/00-前言, 写了.md",
-    "02-基础用法/01-Dao层变为Mapper/01-Dao层的变化.md",
-    "02-基础用法/02-配置xml文件/02-动态SQL/01-!!!!SQL注入问题.md",
     "02-基础用法/02-配置xml文件/02-动态SQL/01-$$取值符号.md",
     "02-基础用法/02-配置xml文件/02-动态SQL/00-前言,写了.md",
-    "02-基础用法/02-配置xml文件/02-动态SQL/01-if标签.md",
     "02-基础用法/02-配置xml文件/02-动态SQL/02-赶紧讲where标签.md",
-    "03-常用插件,比如分页插件/01-分页插件.md",
-    "03-常用插件,比如分页插件/02-逆向生成.md",
+    "05-常用插件,比如分页插件/01-分页插件.md",
+    "05-常用插件,比如分页插件/02-逆向生成.md",
     "cccccccccccccccccccccccccccccccccccccccc.md",
     "00-Mybatis前言/00-前言,写了.md",
     "file:D:/A_java/NOTE/职业规划/12-短期计划-集合Spring网络.md",
     "file:D:/A_java/NOTE/职业规划/13-AI-Agent学习规划.md",
     "02-基础用法/00-前置配置/01-前置配置.md",
-    "03-常用插件,比如分页插件",
-    "02-基础用法/02-配置xml文件/01-select相关/03-成员有类怎么办,映射.md",
-    "02-基础用法/02-配置xml文件/01-select相关/02-名称不对应怎么办,映射.md",
-    "02-基础用法/02-配置xml文件/01-select相关/01-select主体部分.md",
-    "02-基础用法/02-配置xml文件/00-前言,写了/00-前言, 写了.md",
-    "02-基础用法/02-配置xml文件/02-动态SQL/04-!!!trim标签.md",
+    "05-常用插件,比如分页插件",
     "02-基础用法/02-配置xml文件/02-动态SQL/06-!!!foreach.md",
     "02-基础用法/02-配置xml文件/02-动态SQL/05-choose分支标签.md",
-    "02-基础用法/02-配置xml文件/02-动态SQL/03-set标签.md",
-    "02-基础用法/02-配置xml文件/01-select相关/10-重点总结.md",
     "02-基础用法/02-配置xml文件/02-动态SQL",
     "02-基础用法/02-配置xml文件/未命名.canvas",
     "02-基础用法/02-配置xml文件/01-select相关/06-!!!自定义结果集resultMap.md",
-    "02-基础用法/02-配置xml文件/01-select相关/05-分步查询.md",
     "Photo",
     "Photo/Pasted image 20261007220719.png",
     "02-基础用法/02-配置xml文件/01-select相关",
@@ -219,7 +224,6 @@
     "02-基础用法/00-前置配置",
     "02-基础用法/01-Dao层变为Mapper",
     "02-基础用法/02-配置xml文件",
-    "02-基础用法",
-    "01-Mybatis使用"
+    "02-基础用法"
   ]
 }

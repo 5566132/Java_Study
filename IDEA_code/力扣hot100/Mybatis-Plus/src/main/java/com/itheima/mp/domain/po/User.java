@@ -11,6 +11,9 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
+
+
+//数据库的完整字段
 @Data
 @TableName(value = "tb_user", autoResultMap = true)
 public class User {
@@ -26,13 +29,14 @@ public class User {
     @TableField("salary")
     private BigDecimal salary;
 
-    @TableField("t_order")
-    private Integer t_order;
+    @TableField("password")
+    private String password;
 
     @TableField("address")
     private String address;
 
-    @TableField(exist = false)
-    private String bbbb;
+    @TableField("create_time")
+    private LocalDateTime ldt;
+
 
 }

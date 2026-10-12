@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "git语法.md",
+                "file": "02-git基础语法部分/02-提交git仓库到github.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "git语法"
+              "title": "02-提交git仓库到github"
             }
           }
         ]
@@ -40,7 +40,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse",
+                "sortOrder": "alphabetical",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 277.5
   },
   "right": {
     "id": "76d6cc638c38e882",
@@ -190,11 +190,25 @@
   },
   "active": "acb825ffe4027403",
   "lastOpenFiles": [
-    "git的管理逻辑.md",
-    "git功能说明/git功能说明.md",
-    "git语法.md",
-    "Pasted image 20260922161029.png",
-    "git功能说明",
+    "02-git基础语法部分/03-提交是什么.md",
+    "02-git基础语法部分/02-提交git仓库到github.md",
+    "02-git基础语法部分/01-git基础语法.md",
+    "02-git基础语法部分/git的管理逻辑.md",
+    "02-git基础语法部分/04-!!!切换分支.md",
+    "03-git深度总结/01-!!! 分支到底是什么.md",
+    "Photo/Pasted image 20261011235928.png",
+    "Photo/Pasted image 20261011235602.png",
+    "Photo/Pasted image 20261011232847.png",
+    "Photo/Pasted image 20261011232641.png",
+    "小技巧/01-deepseek说的.md",
+    "03-git深度总结",
+    "git功能说明/未命名.md",
+    "02-git基础语法部分",
+    "01-git功能说明/git功能说明.md",
+    "小技巧",
+    "Photo",
+    "Photo/Pasted image 20260922161029.png",
+    "01-git功能说明",
     "欢迎.md"
   ]
 }
