@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-git基础语法部分/02-提交git仓库到github.md",
+                "file": "02-git基础语法部分/04-!!!切换分支.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-提交git仓库到github"
+              "title": "04-!!!切换分支"
             }
           }
         ]
@@ -194,8 +194,8 @@
     "02-git基础语法部分/02-提交git仓库到github.md",
     "02-git基础语法部分/01-git基础语法.md",
     "02-git基础语法部分/git的管理逻辑.md",
-    "02-git基础语法部分/04-!!!切换分支.md",
     "03-git深度总结/01-!!! 分支到底是什么.md",
+    "02-git基础语法部分/04-!!!切换分支.md",
     "Photo/Pasted image 20261011235928.png",
     "Photo/Pasted image 20261011235602.png",
     "Photo/Pasted image 20261011232847.png",

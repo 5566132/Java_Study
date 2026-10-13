@@ -1,11 +1,51 @@
-# 文件夹
+# ===== 编译产物 =====
+target/
+out/
+build/
+classes/
+*.class
+*.jar
+*.war
+*.ear
 
+# ===== IDE: IntelliJ IDEA =====
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# ===== IDE: Eclipse / VS Code =====
+.settings/
+.classpath
+.project
+.factorypath
+.vscode/
+
+# ===== Maven / Gradle =====
+.mvn/wrapper/maven-wrapper.jar
+flattened-pom.xml
+.gradle/
+
+# ===== 日志 / 临时文件 =====
+*.log
+*.tmp
+*.temp
+*.cache
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 工具软件 / 本地库 =====
 Java_software/
 Java_jar/
 
-out/
-target/
+# ===== 笔记工具本地配置 =====
+.obsidian/
 
-# 文件
-*.class
-*.log
+# ===== 敏感信息 =====
+*.key
+*.pem
+.env
+local.properties
