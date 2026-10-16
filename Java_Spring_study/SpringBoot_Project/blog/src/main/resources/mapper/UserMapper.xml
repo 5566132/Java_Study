@@ -9,18 +9,37 @@
         <result column="password" property="password"></result>
     </resultMap>
 
-
-<!-- 利用Comment的user_id字段去查询匹配的VoUser-->
-    <select id="getVoUserByCommentuserId" resultMap="VoUserMP">
-        select id, name from tb_user where id = #{commentUserId}
-    </select>
-
-
-<!--    用于映射VoUser这个类-->
+    <!--    用于映射VoUser这个类-->
     <resultMap id="VoUserMP" type="com.Project.blog.Bean.Vo.User.VoUser">
         <id column="id" property="id"></id>
         <result column="name" property="name"></result>
     </resultMap>
+
+
+
+
+
+<!--    -->
+<!--&lt;!&ndash; 利用Comment的user_id字段去查询匹配的VoUser&ndash;&gt;-->
+<!--    <select id="selectVoUserByCommentuserId" resultMap="VoUserMP">-->
+<!--        select id, name from tb_user where id = #{commentUserId}-->
+<!--    </select>-->
+<!--    -->
+
+<!--    姓名模糊匹配User, 并实现分页功能-->
+    <select id="selectVoUserByName_OnPage" resultMap="VoUserMP">
+        select id, name from tb_user
+            where name like concat('%',#{keyword},'%')
+            order by id
+            limit  #{offset}, #{size}
+    </select>
+
+<!--    根据用户的id直接返回简单用户视图VoUser-->
+    <select id="selectVoUserById" resultMap="VoUserMP">
+        select id , name from tb_user where id = #{id}
+    </select>
+
+
 
 
 </mapper>

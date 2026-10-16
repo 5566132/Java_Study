@@ -12,4 +12,7 @@ public interface CommentMapper extends BaseMapper<Comment> {
     //根据article_id查询一堆comment
     public List<VoComment> selectCommentByArticleId(Long id);
 
+    //根据article_id查询一堆comment, 这是改版之后的多表联查
+    public List<VoComment> selectCommentsByArticleId(Long articleId);
+
 }

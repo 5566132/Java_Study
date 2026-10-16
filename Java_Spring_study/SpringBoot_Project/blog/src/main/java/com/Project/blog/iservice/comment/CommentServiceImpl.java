@@ -20,4 +20,9 @@ public class CommentServiceImpl extends ServiceImpl<CommentMapper, Comment> impl
         return commentMapper.selectCommentByArticleId(id);
     }
 
+    //根据article_id查询一堆comment
+    public List<VoComment> getCommentsByArticleId(Long articlesId){
+        return commentMapper.selectCommentsByArticleId(articlesId);
+    }
+
 }

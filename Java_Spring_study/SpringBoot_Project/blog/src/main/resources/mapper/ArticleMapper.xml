@@ -5,20 +5,38 @@
         id, name, context, user_id
     </sql>
 
-    <select id="selectByWrapper" resultMap="articleMP">
-        select <include refid="all_colum"></include> from tb_article #{e.customSQlSegment}
-    </select>
-
-    <select id="selectByPage" resultMap="articleMP">
-        select * from tb_article limit #{page},4
-    </select>
-
     <resultMap id="articleMP" type="com.Project.blog.Bean.Po.Article">
         <id column="id" property="id"></id>
         <result column="name" property="name"></result>
         <result column="context" property="context"></result>
         <result column="user_id" property="userId"></result>
     </resultMap>
+
+    <resultMap id="VoArticleMP" type="com.Project.blog.Bean.Vo.Article.VoArticleSimple">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+    </resultMap>
+
+
+    <select id="selectVoArticlesByWrapper" resultMap="VoArticleMP">
+        select id, name from tb_article #{ew.customSQlSegment}
+    </select>
+
+    <select id="selectByPage" resultMap="VoArticleMP">
+        select * from tb_article limit #{offset},#{size}
+    </select>
+
+<!--    这个是全查询, 简单查询, 分页-->
+    <select id="selectVoArticleSimpleBy_UserId_Page" resultMap="VoArticleMP">
+        select id, name from tb_article
+                        where user_id = #{userId}
+                        limit #{offset} , #{size}
+    </select>
+
+
+
+
+
 
 
 

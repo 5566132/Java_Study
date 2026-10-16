@@ -11,4 +11,7 @@ public interface CommentService extends IService<Comment> {
     //根据article_id查询一堆comment
     public List<VoComment> getCommentByArticleId(Long id);
 
+    //根据article_id查询一堆comment
+    public List<VoComment> getCommentsByArticleId(Long articlesId);
+
 }
