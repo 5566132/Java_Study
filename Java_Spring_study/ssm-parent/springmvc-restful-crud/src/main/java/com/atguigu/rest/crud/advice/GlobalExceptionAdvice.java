@@ -12,8 +12,6 @@ public class GlobalExceptionAdvice {
 
 
 
-
-
     @ExceptionHandler(Exception.class)
     public R handle1(Exception e){
         System.out.println("处理所有异常");

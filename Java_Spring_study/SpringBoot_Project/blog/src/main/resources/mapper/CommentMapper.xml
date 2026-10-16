@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Project.blog.mapper.CommentMapper">
+<!--    全字段sql-->
+    <sql id="CommentAll">
+        id, context, user_id, article_id
+    </sql>
+
+
+<!--    我直接在这里封装一个多sql查询直接给VoComment中的VoUser注入了-->
+    <select id="selectCommentByArticleId" resultMap="VoCommentMP">
+        select <include refid="CommentAll"></include> from tb_comment where article_id = #{id}
+    </select>
+
+
+<!--    需要一个中间的查询user信息的sql-->
+    <resultMap id="VoCommentMP" type="com.Project.blog.Bean.Vo.Comment.VoComment">
+        <id column="id" property="id"></id>
+        <result column="context" property="context"></result>
+        <association property="voUser"
+                     select="com.Project.blog.mapper.UserMapper.getVoUserByCommentuserId"
+                     column="user_id">
+        </association>
+    </resultMap>
+<!--    resultMap="com.Project.blog.mapper.UserMapper.VoUserMP"-->
+
+
+
+</mapper>

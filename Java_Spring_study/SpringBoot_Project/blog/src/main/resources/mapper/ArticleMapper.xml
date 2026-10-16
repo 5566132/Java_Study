@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Project.blog.mapper.ArticleMapper">
+    <sql id="all_colum">
+        id, name, context, user_id
+    </sql>
+
+    <select id="selectByWrapper" resultMap="articleMP">
+        select <include refid="all_colum"></include> from tb_article #{e.customSQlSegment}
+    </select>
+
+    <select id="selectByPage" resultMap="articleMP">
+        select * from tb_article limit #{page},4
+    </select>
+
+    <resultMap id="articleMP" type="com.Project.blog.Bean.Po.Article">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="context" property="context"></result>
+        <result column="user_id" property="userId"></result>
+    </resultMap>
+
+
+
+</mapper>

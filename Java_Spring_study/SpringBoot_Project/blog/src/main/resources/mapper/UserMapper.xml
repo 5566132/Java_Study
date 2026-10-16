@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.Project.blog.mapper.UserMapper">
+
+<!--    这个是用于映射User这个类的-->
+    <resultMap id="UserMP" type="com.Project.blog.Bean.Po.User">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="password" property="password"></result>
+    </resultMap>
+
+
+<!-- 利用Comment的user_id字段去查询匹配的VoUser-->
+    <select id="getVoUserByCommentuserId" resultMap="VoUserMP">
+        select id, name from tb_user where id = #{commentUserId}
+    </select>
+
+
+<!--    用于映射VoUser这个类-->
+    <resultMap id="VoUserMP" type="com.Project.blog.Bean.Vo.User.VoUser">
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+    </resultMap>
+
+
+</mapper>
+

@@ -9,6 +9,7 @@ import org.apache.ibatis.annotations.Param;
 import java.math.BigDecimal;
 import java.util.List;
 
+
 public interface IUserService extends IService<User> {
     //根据id更改余额
     public void DeductMoneyById(@Param("id")Long id, @Param("money")BigDecimal money);
